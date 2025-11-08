@@ -41,19 +41,19 @@ It performs three core tasks:
 ## 🗂️ Project Structure
 
 cloud-threat-intel-pipeline/
-├── .env                   # Supabase credentials
-├── requirements.txt       # Python dependencies
-├── README.md              # Project documentation
-│
-├── src/
-│   ├── etl.py             # Fetches threat feed and uploads to Supabase
-│   ├── threat_detection.py# Scans system logs for malicious IPs
-│   ├── api.py             # FastAPI endpoints (/check, /)
-│   ├── system_logs.txt    # Sample log file for detection testing
-│   └── __pycache__/       # Cached Python modules
-│
-└── supabase/
-    └── threat_indicators  # Cloud table for IP intelligence
+    .env                   → Supabase credentials  
+    requirements.txt       → Python dependencies  
+    README.md              → Project documentation  
+
+    src/
+        etl.py             → Fetches threat feed and uploads to Supabase  
+        threat_detection.py→ Scans system logs for malicious IPs  
+        api.py             → FastAPI endpoints (/check, /)  
+        system_logs.txt    → Sample log file for detection testing  
+        __pycache__/       → Cached Python modules  
+
+    supabase/
+        threat_indicators  → Cloud table for IP intelligence
 
 
 
